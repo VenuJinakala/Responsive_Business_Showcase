@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo">DynamicSite</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Web Developer</span></h1>
+            <p>
+                This is a complete responsive and dynamic web page built using HTML,
+                CSS, and JavaScript.
+            </p>
+            <a href="#services" class="btn">Explore More</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Developer" />
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">My <span>Services</span></h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Modern and responsive UI/UX design.</p>
+            </div>
+
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Interactive frontend using HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="card">
+                <h3>Backend Integration</h3>
+                <p>Dynamic APIs and database integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats">
+        <h2 class="section-title">Project <span>Statistics</span></h2>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h2 class="counter" data-target="150">0</h2>
+                <p>Projects</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="counter" data-target="120">0</h2>
+                <p>Clients</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="counter" data-target="5">0</h2>
+                <p>Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <textarea rows="5" id="messageInput" placeholder="Enter your message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 DynamicSite | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
